@@ -32,7 +32,7 @@ class session94233Controller extends Controller
     {
         $session = $request->isMethod('put') ?
          session94233::findOrFail($request->session_id) : new session94233;
-        $session->id = Auth::user('id');
+        $session->id = auth()->user()->id;
         $session->location = $request->input('location');
         $session->exercise_type = $request->input('exercise-type');
         $session->reps = $request->input('reps');
