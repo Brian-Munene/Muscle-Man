@@ -46,7 +46,7 @@ class instructor94233Controller extends Controller
     public function show($id)
     {
         //show a single instructor
-        $instructor = instructor94233::findOrFail($id);
+        $instructor = instructor94233::find($id);
         //Return as a resource
         return new InstructorResource($instructor);
     }
