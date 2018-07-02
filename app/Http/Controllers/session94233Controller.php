@@ -54,7 +54,7 @@ class session94233Controller extends Controller
     {
          
           //show a single session
-          $session = session94233::findOrFail($id);
+          $session = session94233::find($id);
           //Return as a resource
           return new SessionResource($session);
          
