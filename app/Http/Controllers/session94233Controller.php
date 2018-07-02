@@ -50,11 +50,11 @@ class session94233Controller extends Controller
      * @param  int  $userID
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
          
           //show a single session
-          $session = session94233::find($id);
+          $session = session94233::paginate(7);
           //Return as a resource
           return new SessionResource($session);
          

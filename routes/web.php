@@ -26,7 +26,7 @@ Route::post('/session',[
 'uses' => 'session94233Controller@store'
 ]);
 //View workout sessions
-Route::get('/sessions/{id}',[ 
+Route::get('/sessions',[ 
     'middleware' => 'auth',
     'uses' => 'session94233Controller@show'
     ]);
