@@ -16,8 +16,8 @@ class instructor94233Controller extends Controller
      */
     public function index()
     {
-        //Get instroctor
-        $instructors = instructor94233::paginate(5);
+        //Get instructor
+        $instructors = instructor94233::paginate(10);
 
         //return collection of instructors as a resource
         return InstructorResource::collection($instructors);
