@@ -18,7 +18,7 @@ class CreateInstructors94233Table extends Migration
             $table->string('name');
             $table->string('contacts');
             $table->string('email')->unique();
-            $table->binary('photo');
+            $table->string('photo');
             $table->string('gender');
         });
     }
