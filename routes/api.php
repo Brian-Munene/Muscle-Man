@@ -27,7 +27,7 @@ Route::get('/instructor/{id}', 'instructor94233Controller@show');
 //Add a new workout session
 Route::post('/session','session94233Controller@store');
 //View workout sessions
-Route::get('/sessions/{id}','session94233Controller@show');
+Route::get('/sessions','session94233Controller@show');
 //view users profile
 Route::get('/users','user94233Controller@index');
 //view user profile
