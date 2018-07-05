@@ -21,7 +21,7 @@ class instructor94233Controller extends Controller
         InstructorResource::withoutWrapping();
 
         //return collection of instructors as a resource
-        return InstructorResource::collection($instructors);
+        return new InstructorResource($instructors);
 
     }
 
