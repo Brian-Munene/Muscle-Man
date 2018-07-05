@@ -19,10 +19,10 @@ class instructor94233Controller extends Controller
         //Get instructor
         $instructors = instructor94233::all();
         return $instructors;
-        InstructorResource::withoutWrapping();
+        //InstructorResource::withoutWrapping();
 
         //return collection of instructors as a resource
-        return new InstructorResource($instructors);
+        //return new InstructorResource($instructors);
 
     }
 
@@ -50,7 +50,7 @@ class instructor94233Controller extends Controller
         //show a single instructor
         $instructor = instructor94233::find($id);
         //Return as a resource
-        return new InstructorResource($instructor);
+        return $instructor;
     }
 
     /**

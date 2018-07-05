@@ -18,10 +18,10 @@ class gym_location94233Controller extends Controller
     public function index()
     {
           //Get gym locations
-          $locations = gym_location94233::paginate(5);
-
+          $locations = gym_location94233::all();
+            return $locations;
           //return collection of instructors as a resource
-          return LocationResource::collection($locations);
+         // return LocationResource::collection($locations);
     }
 
     /**

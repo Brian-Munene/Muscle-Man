@@ -54,9 +54,10 @@ class session94233Controller extends Controller
     {
          
           //show a single session
-          $session = session94233::paginate(10);
+          $session = session94233::all();
+          return $session;
           //Return as a resource
-          return new SessionResource($session);
+          //return new SessionResource($session);
          
 
           //$session = session94233::find($userID);
