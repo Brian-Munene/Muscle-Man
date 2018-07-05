@@ -18,6 +18,7 @@ class instructor94233Controller extends Controller
     {
         //Get instructor
         $instructors = instructor94233::paginate(10);
+        InstructorResource::withoutWrapping();
 
         //return collection of instructors as a resource
         return InstructorResource::collection($instructors);
